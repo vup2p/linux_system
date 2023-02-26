@@ -1,4 +1,4 @@
-check_port() {
+check_port_local() {
     if [ -n $1 ]; then
         echo "Please input port number. Ex: check_port 443"
         exit 1
@@ -10,3 +10,4 @@ check_port() {
         echo -e "Port $1 isn't use"
     fi
 }
+check_port_local $1
